@@ -24,3 +24,11 @@ dist-ssr
 *.sw?
 
 *.pem
+
+.git/
+node_modules/
+pnpm-lock.yaml
+
+.github/
+.turbo
+assets/

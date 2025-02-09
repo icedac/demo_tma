@@ -102,6 +102,16 @@ export const InitDataPage: FC = () => {
   }
   return (
     <Page>
+        <Placeholder
+          header="Oops"
+          description="Application was launched with missing init data"
+        >
+          <img
+            alt="Telegram sticker"
+            src="https://xelene.me/telegram.gif"
+            style={{ display: 'block', width: '144px', height: '144px' }}
+          />
+        </Placeholder>
       <List>
         <DisplayData header={'Init Data'} rows={initDataRows}/>
         {userRows && <DisplayData header={'User'} rows={userRows}/>}
