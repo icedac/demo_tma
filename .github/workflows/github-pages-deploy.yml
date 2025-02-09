@@ -34,11 +34,14 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 22
           registry-url: 'https://registry.npmjs.org'
 
+      - name: Install pnpm
+        run: npm install -g pnpm
+
       - name: Install deps
-        run: npm ci
+        run: pnpm install
 
       - name: Build
         run: npm run build
